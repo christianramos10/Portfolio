@@ -1,0 +1,78 @@
+body{
+  background: darkgray;
+  font-family: sans-serif;
+}
+
+.intro{
+  height: 70vh;
+  width: 100%;
+  background-color: blue;
+}
+
+.imageDiv{
+  background: green;
+  float: left;
+  left: 10%;
+  position: absolute;
+  top: 15vh;
+}
+
+.introText{
+  float: right;
+  right: 10%;
+  text-align: center;
+  background: yellow;
+  position: relative;
+  top: 25vh;
+}
+
+.tabContainer{
+  float: right;
+  left: 18%;
+  background-color: red;
+  position: relative;
+  width: 25%;
+  height: 35%;
+  top: 50vh;
+}
+
+.tabContainer .buttonContainer{
+  height: 10%;
+}
+
+.tabContainer .buttonContainer button {
+  width: 33%;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 180%;
+  background-color: #eee;
+}
+.tabContainer .buttonContainer button:hover{
+  background-color: #d7d4d4;
+}
+
+.tabContainer .tabPanel{
+  height: 25%;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: white;
+  font-size: 200%;
+}
+
+
+.profileImage{
+  width: 70%;
+  height: 70%;
+}
+
+.name{
+  font-family: brush script mt;
+  font-size: 600%;
+}
+
+.occupation{
+  font-size: 250%;
+}
