@@ -12,42 +12,114 @@
 
     <!-- Script links -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-    <link rel="script" href="script.js">
+    <script src="script.js"></script>
   </head>
   <body>
 
     <!-- Tittle -->
     <div class="title-row row">
 
+        <!-- Image Column -->
       <div class="image-row col-lg-6 col-md-6 col-sm-6">
         <img class="title-image" src="images/profile.png" alt="Profile Picture" />
       </div>
 
+        <!-- Info Column -->
       <div class="info-row col-lg-6 col-md-6 col-sm-6">
         <div class="name">
           <h1>Christian Ramos Lopez</h1>
           <h3>Software Developer</h3>
         </div>
 
-        <ul class="skills-nav nav nav-tabs">
+        <!-- Skill Nav -->
+        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
+            <a href="#skills-pane" id="#skills-tab" class="nav-link active" data-bs-toggle="tab" role="tab" aria-controls="skills-pane" aria-selected="true">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a href="#additional-knowledge-pane" id="#additional-knowledge-tab" class="nav-link" data-bs-toggle="tab" role="tab" aria-controls="aditional-knowledge-pane" aria-selected="false">Additional Knowledge</a>
           </li>
         </ul>
+
+        <!-- Skills Content -->
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane active" role="tabpanel" id="skills-pane" aria-labelledby="skills-tab">
+            <div class="skills-row row">
+
+              <div class="proficient-col col">
+                <h3>Proficient with</h3>
+                <ul>
+                  <li>Java</li>
+                  <li>.Net</li>
+                  <li>SQL</li>
+                </ul>
+              </div>
+
+              <div class="also-worked-with-col col">
+                <h3>Also worked with</h3>
+                <ul>
+                  <li>HTML 5</li>
+                  <li>CSS 3</li>
+                  <li>Bootstrap 5</li>
+                  <li>Windows Forms (C#)</li>
+                  <li>C++</li>
+                  <li>Visual Basic</li>
+                </ul>
+              </div>
+
+              <div class="tools-col col">
+                <h3>Tools used</h3>
+                <ul>
+                  <li>Eclipse</li>
+                  <li>Atom</li>
+                  <li>Visual Studio</li>
+                  <li>MS SQL Management Studio</li>
+                  <li>GitHub Desktop</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <div class="tab-pane" role="tabpanel" id="additional-knowledge-pane" aria-labelledby="additional-knowledge-tab">
+            <div class="knowledge-row row">
+
+              <div class="programming-knowledge-col col">
+                <h3>Programming Knowledge</h3>
+                <ul>
+                  <li>Object-Oriented Programming</li>
+                  <li>Data Structures</li>
+                  <li>Software Life Cycle</li>
+                </ul>
+              </div>
+              <div class="soft-skills-knowledge-col col">
+                <h3>Soft Skills</h3>
+                <ul>
+                  <li>Analytical Skills</li>
+                  <li>Problem Solving</li>
+                  <li>Fast Learning</li>
+                  <li>Self-Management</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
       </div>
-
-
     </div>
+
+<div class="about-me">
+    About Me Here
+</div>
+
+<div class="projects">
+    Projects Here
+</div>
+
+
+
 
   </body>
 </html>

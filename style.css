@@ -5,7 +5,7 @@
 /* Tittle Section */
 
 .title-row{
-  height: 100vh;
+
 }
 
 .image-row{
@@ -23,12 +23,25 @@
 }
 
 .name{
-  padding-top: 30%;
+  padding: 30% 0 20% 0;
 }
 
-.skills-nav{
-  text-align: center;
-  width: 60%;
-  margin: auto;
-  padding-top: 15%;
+/* Skills Section */
+.nav-tabs .nav-link.active{
+  background-color: green;
+  color: white;
+  border: 2px solid;
+}
+
+.nav-tabs .nav-link{
+  background-color: blue;
+  color: white;
+}
+
+.tab-content{
+  border: 2px solid;
+}
+
+.tab-content ul{
+  list-style-type: none;
 }
