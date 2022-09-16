@@ -1,218 +1,258 @@
-.body{
+h1, h2, h3, p{
+  color: #DCD7C9;
+  font-family: 'Montserrat', sans-serif;
 }
 
+h1{
+  font-family: ubuntu;
+  line-height: 10rem;
+  font-size: 5rem;
+}
+
+h2{
+  line-height: 7rem;
+  font-size: 3rem;
+}
+
+h3{
+  line-height: 5rem;
+  font-size: 2rem;
+}
+
+p{
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+li{
+  line-height: 3rem;
+  font-size: 2rem;
+}
 /* Tittle Section */
-
 .title-row{
-
+  background-color: #2C3639;
+  height: 100vh;
 }
 
-.image-row{
-  background-color: blue;
+.title-image {
+  width: 80%;
+  height: 80%;
+  float: right;
+  margin-top: 10%;
 }
 
-.title-image{
-  width: 100%;
-  height: 100%;
-}
-
-.info-row{
-  background-color: red;
+.info-row {
   text-align: center;
 }
 
-.name{
-  padding: 30% 0 20% 0;
+.name {
+  padding: 30% 0 10% 0;
+}
+
+.title-row .icons .icon{
+  font-size: 3rem;
 }
 
 /* About Me Section */
-.about-me-image{
+.about-me-image {
   width: 80%;
   height: 80%;
-  padding: 7% 0 0 30%;
 }
 
-.about-me-text{
-  padding: 7% 15% 0 0;
+.about-me-text {
+  padding: 7% 10% 0 0;
 }
 
-.about-me{
-  padding-top: 7%;
+.about-me p{
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.about-me {
+  padding-top: 2%;
   text-align: center;
-  border: 2px solid;
+  background-color: #3F4E4F;
 }
-
-
 
 /* Skills Section */
-.skills{
+.skills {
   text-align: center;
-  padding: 4% 15% 7% 15%;
+  padding: 2% 15% 7% 15%;
+  background-color: #2C3639;
 }
 
-#myTab{
+#myTab {
   padding-top: 5%;
 }
 
-.nav-tabs .nav-link.active{
-  background-color: green;
-  color: white;
-  border: 2px solid;
+.nav-tabs .nav-link.active {
+  background-color: #A27B5C;
+  color: #DCD7C9;
 }
 
-.nav-tabs .nav-link{
-  background-color: blue;
-  color: white;
+.nav-tabs .nav-link {
+  color: #DCD7C9;
+  border: 2px solid #A27B5C;
 }
 
-.tab-content{
-  border: 2px solid;
+.nav-tabs .nav-link:hover {
+  background-color: #A27B5C;
 }
 
-.tab-content ul{
+.tab-content {
+  background-color: #A27B5C;
+}
+
+.tab-content ul {
   list-style-type: none;
 }
 
-  /* Projects Section */
-.projects{
-  text-align: center;
-  padding: 7% 15% 7% 15%;
+.tab-content li{
+  color: #3F4E4F;
 }
 
-/* .projects-row .card{
-  margin-top: 7%;
-} */
+/* Projects Section */
+.projects {
+  text-align: center;
+  padding: 2% 15% 7% 15%;
+  background-color: #3F4E4F;
+  color: #DCD7C9;
+}
 
-.container{
+.projects h2{
+  padding-bottom: 2rem;
+}
+
+.container {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  padding:25px 20px;
+  padding: 25px 20px;
 }
 
-.container .heading{
-  font-size: 40px;
-  margin-bottom: 20px;
-  color:#334;
-}
-
-.container .box-container{
+.container .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap:20px;
+  gap: 20px;
 }
 
-.container .box-container .box{
-  background-color: #fff;
-  padding:20px;
+.container .box-container .box {
+  background-color: #A27B5C;
+  padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
   display: none;
 }
 
 .container .box-container .box:nth-child(1),
 .container .box-container .box:nth-child(2),
-.container .box-container .box:nth-child(3){
+.container .box-container .box:nth-child(3) {
   display: inline-block;
 }
 
-.container .box-container .box .image{
+.container .box-container .box .image {
   margin-bottom: 20px;
   overflow: hidden;
   height: 250px;
   border-radius: 5px;
 }
 
-.container .box-container .box .image img{
+.container .box-container .box .image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.container .box-container .box:hover .image img{
+.container .box-container .box:hover .image img {
   transform: scale(1.1);
 }
 
-.container .box-container .box .content h3{
+.container .box-container .box .content h3 {
   font-size: 20px;
-  color:#334;
+  color: #DCD7C9;
 }
 
-.container .box-container .box .content p{
+.container .box-container .box .content p {
   font-size: 15px;
-  color:#777;
+  color: #3F4E4F;
   line-height: 2;
-  padding:15px 0;
+  padding: 15px 0;
 }
 
-.container .box-container .box .content .btn{
+.container .box-container .box .content .btn {
   display: inline-block;
-  padding:10px 30px;
-  border:1px solid #334;
-  color:#334;
+  padding: 10px 30px;
+  border: 1px solid #DCD7C9;
+  color:#DCD7C9;
   font-size: 16px;
 }
 
-.container .box-container .box .content .btn:hover{
-  background-color: crimson;
-  border-color: crimson;
-  color:#fff;
+.container .box-container .box .content .btn:hover {
+  background-color: #DCD7C9;
+  border-color: #DCD7C9;
+  color: #2C3639;
 }
 
-.container .box-container .box .content .icons{
+.container .box-container .box .content .icons {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
   padding-top: 15px;
-  border-top:1px solid #334;
+  border-top: 1px solid #334;
 }
 
-.container .box-container .box .content .icons span{
+.container .box-container .box .content .icons span {
   font-size: 14px;
-  color:#777;
+  color: #3F4E4F;
 }
 
-.container .box-container .box .content .icons span i{
-  color:crimson;
+.container .box-container .box .content .icons span i {
+  color: #3F4E4F;
   padding-right: 5px;
 }
 
-#load-more{
+#load-more {
   margin-top: 20px;
   display: inline-block;
-  padding:13px 30px;
-  border:1px solid #334;
-  color:#334;
+  padding: 13px 30px;
+  border: 1px solid #334;
+  color: #DCD7C9;
   font-size: 16px;
-  background-color: #fff;
+  background-color: #2C3639;
   cursor: pointer;
 }
 
-#load-more:hover{
-  background-color: crimson;
-  border-color: crimson;
-  color:#fff;
+#load-more:hover {
+  background-color: #DCD7C9;
+  border-color: #DCD7C9;
+  color: #2C3639;
 }
 
-@media (max-width:450px){
-
-  .container .heading{
+@media (max-width:450px) {
+  .container .heading {
     font-size: 25px;
   }
 
-  .container .box-container{
+  .container .box-container {
     grid-template-columns: 1fr;
   }
 
-  .container .box-container .box .image{
+  .container .box-container .box .image {
     height: 200px;
   }
 
-  .container .box-container .box .content p{
+  .container .box-container .box .content p {
     font-size: 12px;
   }
 
-  .container .box-container .box .content .icons span{
+  .container .box-container .box .content .icons span {
     font-size: 12px;
   }
+}
+
+  /* Footer Section */
+.contact-me{
+  text-align: center;
+  background-color: #2C3639;
+}
