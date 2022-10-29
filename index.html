@@ -3,302 +3,195 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
   <title>My Portfolio</title>
 
   <!-- CSS Links -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-  <!-- Tittle -->
-  <div class="title-row row">
-
-    <!-- Image Column -->
-    <div class="image-row col-lg-6 col-md-6 col-sm-6">
-      <img class="title-image" src="images/profile.png" alt="Profile Picture" />
-    </div>
-
-    <!-- Info Column -->
-    <div class="info-row col-lg-6 col-md-6 col-sm-6">
-      <div class="name">
-        <h1>Christian Ramos Lopez</h1>
-        <h2>Software Developer</h2>
-
-      </div>
-
-      <div class="icons">
-        <a href="https://github.com/christianramos10" target="_blank"><i class="icon bi bi-github"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/christian-ramos-055a401bb/" target="_blank"><i class="icon bi bi-linkedin"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/Chris604565"><i class="icon bi bi-twitter" target="_blank"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="cv/ResumeComputerScience.pdf" target="_blank"><i class="icon bi bi-file-earmark-text"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=mailto:christianramos10@gmail.com target="_blank"><i class="icon bi bi-envelope"></i></a>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- About Me -->
-  <div class="about-me row">
-    <h2>Here is a bit about me.</h2>
-    <div class="col lg-6 md-6 sm-6">
-      <img class="about-me-image" src="images/profile.png" alt="About Me Picture" />
-    </div>
-    <div class="about-me-text col lg-6 md-6 sm-6">
-      <p>Hello!</p>
-      <p>I am a computer science student that loves the challenge of experimenting with new ideas and technologies. I also have a unlimited thirst for creating new projects.</p>
-    </div>
-  </div>
-
-  <!-- Skills -->
-  <div class="skills row">
-    <h2>My Skills</h2>
-    <!-- Skill Nav -->
-    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-      <li class="nav-item">
-        <a href="#skills-pane" id="#skills-tab" class="nav-link active" data-bs-toggle="tab" role="tab" aria-controls="skills-pane" aria-selected="true"><strong>Skills</strong></a>
-      </li>
-      <li class="nav-item">
-        <a href="#additional-knowledge-pane" id="#additional-knowledge-tab" class="nav-link" data-bs-toggle="tab" role="tab" aria-controls="aditional-knowledge-pane" aria-selected="false"><strong>Additional Knowledge</strong></a>
-      </li>
-    </ul>
-
-    <!-- Skills Content -->
-    <div class="tab-content" id="myTabContent">
-      <div class="tab-pane active" role="tabpanel" id="skills-pane" aria-labelledby="skills-tab">
-        <div class="skills-row row">
-
-          <div class="proficient-col col">
-            <h3>Proficient with</h3>
-            <ul>
-              <li>Java</li>
-              <li>.Net</li>
-              <li>SQL</li>
-            </ul>
-          </div>
-
-          <div class="also-worked-with-col col">
-            <h3>Also worked with</h3>
-            <ul>
-              <li>HTML 5</li>
-              <li>CSS 3</li>
-              <li>Bootstrap 5</li>
-              <li>Windows Forms (C#)</li>
-              <li>C++</li>
-              <li>Visual Basic</li>
-            </ul>
-          </div>
-
-          <div class="tools-col col">
-            <h3>Tools used</h3>
-            <ul>
-              <li>Eclipse</li>
-              <li>Atom</li>
-              <li>Visual Studio</li>
-              <li>MS SQL Management Studio</li>
-              <li>GitHub Desktop</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="tab-pane" role="tabpanel" id="additional-knowledge-pane" aria-labelledby="additional-knowledge-tab">
-        <div class="knowledge-row row">
-
-          <div class="programming-knowledge-col col">
-            <h3>Programming Knowledge</h3>
-            <ul>
-              <li>Object-Oriented Programming</li>
-              <li>Data Structures</li>
-              <li>Software Life Cycle</li>
-            </ul>
-          </div>
-          <div class="soft-skills-knowledge-col col">
-            <h3>Soft Skills</h3>
-            <ul>
-              <li>Analytical Skills</li>
-              <li>Problem Solving</li>
-              <li>Fast Learning</li>
-              <li>Self-Management</li>
-            </ul>
-          </div>
-
+  <!-- navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/ProfilePicCircled.png" alt="Profile Picture" heigh=50px width=50px></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#intro">Intro</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#works">Works</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </div>
       </div>
     </div>
+  </nav>
   </div>
 
-  <div class="projects">
-    <h2>My Projects</h2>
-    <div class="container">
-      <div class="box-container">
-
-        <div class="box">
-          <div class="image">
-            <img src="images/atm.png" alt="ATM">
-          </div>
-          <div class="content">
-            <h3>Automated Teller Machine</h3>
-            <p>A windows form application that connects users to their database information to perform a teller's common tasks.</p>
-            <a href="https://github.com/christianramos10/COMP3400-Project" target="_blank" class="btn">View Code</a>
-            <div class="icons">
-              <span> <i class="fas fa-calendar"></i> 5th May, 2022 </span>
-              <span> <i class="fas fa-user"></i>C#, SQL, Windows Forms</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="image">
-            <img src="images/tinDog.png" alt="Tin Dog">
-          </div>
-          <div class="content">
-            <h3>TinDog</h3>
-            <p>A tinder ripoff created while I learnt to create website.</p>
-            <a href="https://github.com/christianramos10/UdemyCourseWebDevelopmentBootcamp/tree/main/TinDog/TinDog-Start-master" target="_blank" class="btn">View Code</a>
-            <div class="icons">
-              <span> <i class="fas fa-calendar"></i> 14th September, 2022 </span>
-              <span> <i class="fas fa-user"></i>HTML5, CSS3, Boostrap5</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="image">
-            <img src="images/2dMagika.png" alt="2D Magika">
-          </div>
-          <div class="content">
-            <h3>2d Magika</h3>
-            <p>A Magika ripoff used to learn about object oriented programming while using multiple Java components.</p>
-            <a href="https://github.com/christianramos10/Java2DGame" target="_blank" class="btn">View Code</a>
-            <div class="icons">
-              <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
-              <span> <i class="fas fa-user"></i>Java</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="image">
-            <img src="images/portfolio.png" alt="">
-          </div>
-          <div class="content">
-            <h3>My portfolio</h3>
-            <p>A website to host my personal and professional information while practicing my web development skills.</p>
-            <a href="https://github.com/christianramos10/Portfolio" target="_blank" class="btn">View Code</a>
-            <div class="icons">
-              <span> <i class="fas fa-calendar"></i> 15th September, 2022 </span>
-              <span> <i class="fas fa-user"></i>HTML5, CSS3, Boostrap5, JS</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="image">
-            <img src="images/basicCalculator.png" alt="Basic Calculator">
-          </div>
-          <div class="content">
-            <h3>Basic Calculator</h3>
-            <p>A calculator that performs basic mathematical operations.</p>
-            <a href="https://github.com/christianramos10/BasicCalculator" target="_blank" class="btn">View Code</a>
-            <div class="icons">
-              <span> <i class="fas fa-calendar"></i> 18th March, 2022 </span>
-              <span> <i class="fas fa-user"></i>C#, Windows Forms</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="image">
-            <img src="images/dummyPortfolio.png" alt="">
-          </div>
-          <div class="content">
-            <h3>Personal Site</h3>
-            <p>A dummy website to host my personal information that was created when I started learning cascading style sheets.</p>
-            <a href="https://github.com/christianramos10/UdemyCourseWebDevelopmentBootcamp/tree/main/CSS%20-%20My%20Site" target="_blank" class="btn">View Code</a>
-            <div class="icons">
-              <span> <i class="fas fa-calendar"></i> 09 September, 2022 </span>
-              <span> <i class="fas fa-user"></i>HTML5, CSS3</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="box">
-          <div class="image">
-            <img src="images/img-7.jpg" alt="">
-          </div>
-          <div class="content">
-            <h3>blog title goes here</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, adipisci!</p>
-            <a href="#" class="btn">read more</a>
-            <div class="icons">
-              <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
-              <span> <i class="fas fa-user"></i> by admin </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="image">
-            <img src="images/img-8.jpg" alt="">
-          </div>
-          <div class="content">
-            <h3>blog title goes here</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, adipisci!</p>
-            <a href="#" class="btn">read more</a>
-            <div class="icons">
-              <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
-              <span> <i class="fas fa-user"></i> by admin </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="image">
-            <img src="images/img-9.jpg" alt="">
-          </div>
-          <div class="content">
-            <h3>blog title goes here</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, adipisci!</p>
-            <a href="#" class="btn">read more</a>
-            <div class="icons">
-              <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
-              <span> <i class="fas fa-user"></i> by admin </span>
-            </div>
-          </div>
-        </div> -->
-
+  <!--Container Start-->
+  <div class="container">
+    <!-- Intro -->
+    <div class="intro content" data-aos="fade-right" id="intro">
+      <div class="intro-text">
+        <h4 class="heading">Hello World</h4>
+        <h1>I am <span class="heading">Christian Ramos</span>,</h1>
+        <h1>a full-stack</h1>
+        <h1>Software Developer.</h1>
       </div>
-
-      <div id="load-more"> load more </div>
-
+      <div class="link-icons">
+        <a href="https://github.com/christianramos10" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/christian-ramos-055a401bb/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="" onclick="sendMessage()"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://twitter.com/Chris604565" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      </div>
     </div>
-  </div>
+    <!-- About -->
+    <div class="about content" data-aos="fade-left" id="about">
+        <h4 class="heading">About Me</h4>
+      <div class="row">
+        <div class="col-lg-6 about-image">
+          <img src="images/ProfilePicture.png" alt="Profile Picture" heigh=400px width=400px>
+        </div>
+        <div class="col-lg-6 about-text">
+          <p>I am <span>Christian Ramos Lopez</span>. I enjoy developing software applications, working on both <span>front-end</span> and <span>back-end</span>. I am always striving to learn and develop new skills and become a better <span>software engineer</span> one line of code at a time.</p>
+          <p>My main experience is in both <span>web and desktop application development</span>. However, I occasionally enjoy creating simple yet entertaining mini-games.</p>
+          <button type="button" class="btn btn-dark btn-lg">Resume</button>
+        </div>
+      </div>
+    </div>
+    <!-- Skills -->
+    <div class="skills content" data-aos="fade-right" id="skills">
+        <h4 class="heading">My Skills</h4>
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card">
+                <i class="fa-solid fa-laptop-code image-icon"></i>
+              <div class="card-body">
+                <h5 class="card-title">Used</h5>
+                <p class="card-text"><i class="fa-solid fa-caret-right"></i> Java</p>
+                <p class="card-text"><i class="fa-solid fa-caret-right"></i> C#</p>
+                <p class="card-text"><i class="fa-solid fa-caret-right"></i> SQL</p>
+                <p class="card-text"><i class="fa-solid fa-caret-right"></i> HTML</p>
+                <p class="card-text"><i class="fa-solid fa-caret-right"></i> Bootstrap</p>
+                <p class="card-text"><i class="fa-solid fa-caret-right"></i> PHP</p>
+                <p class="card-text"><i class="fa-solid fa-caret-right"></i> MySQL</p>
+                <p class="card-text"><i class="fa-solid fa-caret-right"></i> WinForms (C# & VB)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card">
+              <i class="fa-solid fa-laptop-code image-icon"></i>
+              <div class="card-body">
+                <h5 class="card-title">Exposed</h5>
+                <p class="card-text"><i class="fa-solid fa-caret-right"></i> CSS</p>
+                <p class="card-text"><i class="fa-solid fa-caret-right"></i> JS</p>
+                <p class="card-text"><i class="fa-solid fa-caret-right"></i> C++</p>
+                <p class="card-text"><i class="fa-solid fa-caret-right"></i> Command Line</p>
+                <p class="card-text"><i class="fa-solid fa-caret-right"></i> Ubuntu</p>
+                <p class="card-text"><i class="fa-solid fa-caret-right"></i> Git</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card">
+              <i class="fa-solid fa-brain image-icon"></i>
+              <div class="card-body">
+                <h5 class="card-title">Knowledge</h5>
+                <p class="card-text"><i class="fa-solid fa-caret-right"></i> OOP</p>
+                <p class="card-text"><i class="fa-solid fa-caret-right"></i> Data Structures</p>
+                <p class="card-text"><i class="fa-solid fa-caret-right"></i> SDLC - Theory</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Works -->
+    <div class="works content" data-aos="fade-left" id="works">
+        <h4 class="heading">My Work</h4>
+        <div class="row">
+          <div class="col-lg-6 align-items-stretch">
+            <div class="card">
+              <img src="images/myLibrarySite.png" class="card-img-top" alt="Library Employee Admin Picture">
+              <div class="card-body">
+                <h5 class="card-title"><span>My Library Website</span></h5>
+                <p class="card-text">Created a website for a "local" library where users can order books from a local library.</p>
+                <p class="card-text">Use 'robertoflores@mail.com' and '@roberto0001' to LogIn or create your own account.</p>
+                <p class="card-text"><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i><i class="fa-brands fa-bootstrap"></i><i class="fa-brands fa-square-js"></i><i class="fa-brands fa-php"></i></p>
+                <a href="https://mylibraryy.online/" target="_blank" class="btn btn-dark">Go to site</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex align-items-stretch">
+            <div class="card">
+              <img src="images/employeeAdminApp.png" class="card-img-top" alt="My Library Picture">
+              <div class="card-body">
+                <h5 class="card-title"><span>My Library Admin App</span></h5>
+                <p class="card-text">Developed a desktop application for My Library Website using C#-WinForms where employees can manage the library's system.</p>
+                <p class="card-text">Using this application, employees can view and edit current book orders, books that are rented and the book's database. Administrators can also view and edit employee's and client's database.</p>
+                <a href="https://github.com/christianramos10/Library-Management-Application" target="_blank" class="btn btn-dark">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      <!-- Contact -->
+    <div class="contact content" data-aos="fade-right" id="contact">
+        <h4 class="heading">Contact Me</h4>
+        <h2 class="contact-message">I'd love to hear from you. Whether you have a question or just want to chat about software developing technologies - send me a message.</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <h5>Reach Me At</h5>
+            <p><a href="" onclick="sendMessage()"><span class="link">christianramoslopez10@gmail.com</span></a></p>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h5>Social</h5>
+            <p><a href="https://www.linkedin.com/in/christian-ramos-055a401bb/ target="_blank""><span class="link">LinkedIn</span></a> , <a href="https://github.com/christianramos10"><span class="link">GitHub</span></a></p>
+            <p><a href="https://twitter.com/Chris604565" target="_blank"><span class="link">Twitter</span></a></p>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="form-content">
+                <div class="form-group">
+                  <label for="subject"> Subject:</label>
+                  <input type="text" id="subject" name="subject">
+                </div>
+                <div class="form-group">
+                  <label for="message"> Message:</label>
+                  <textarea name="message" class="text" id="message" rows="8" cols="80"></textarea>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-dark btn-lg" name="button" onclick="sendMessage()">Send Message</button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
 
-  <div class="contact-me">
-    <p>&copy; Christian Ramos Lopez</p>
   </div>
-
-  <!-- Script links -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    let loadMoreBtn = document.querySelector('#load-more');
-    let currentItem = 3;
-
-    loadMoreBtn.onclick = () => {
-      let boxes = [...document.querySelectorAll('.container .box-container .box')];
-      for (var i = currentItem; i < currentItem + 3; i++) {
-        boxes[i].style.display = 'inline-block';
-      }
-      currentItem += 3;
-
-      if (currentItem >= boxes.length) {
-        loadMoreBtn.style.display = 'none';
-      }
-    }
+    AOS.init();
+  </script>
+  <script type="text/javascript">
+    function sendMessage(){
+        let subject = document.getElementById('subject').value;
+        let message = document.getElementById('message').value;
+        let mail = document.createElement("a");
+        let ref = "mailto:christianramoslopez10@gmail.com?subject="+subject+"&body="+message;
+        mail.href = ref;
+        mail.click();
+    };
   </script>
 </body>
+
 </html>
