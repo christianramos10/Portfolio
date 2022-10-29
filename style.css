@@ -14,15 +14,39 @@ span, .heading{
   color: #FF6D28;
 }
 
+.link:hover{
+  color: #fff;
+}
+
 a{
   text-decoration: none;
 }
 
+.link-icons i{
+  color: #FF6D28;
+}
+.link-icons i:hover{
+  color: #fff;
+}
+
+.btn{
+  color: #FF6D28;
+}
+
+.btn:hover{
+  background-color: #FF6D28;
+  border-color: #FF6D28;
+  color: #fff;
+}
+
 /* Navbar */
-.navbar .active a{
+.navbar .nav-link{
   font-weight: bold;
   color: #FF6D28;
-  visibility: hidden;
+}
+
+.navbar .nav-link:hover{
+  color: #fff;
 }
 
 .heading{
@@ -124,4 +148,17 @@ a{
 /* Contact Me section */
 .contact-message{
   margin: 7% 0 12% 0;
+}
+
+.form-group{
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.form-group input, .form-group textarea{
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
 }
